@@ -13,3 +13,10 @@ npm run dev
 ## Vite
 ローカル開発環境のベースはViteを採用
 https://vitejs.dev/
+
+## eslint + autoformat
+* eslint
+* eslint-config-prettier
+* eslint-plugin-prettier
+* eslint-plugin-vue
+* prettier
