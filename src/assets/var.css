@@ -1,0 +1,4 @@
+:root {
+  --color-main: #602d1d;
+  --color-light: lighten(#602d1d, 20%);
+}

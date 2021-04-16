@@ -20,3 +20,16 @@ https://vitejs.dev/
 * eslint-plugin-prettier
 * eslint-plugin-vue
 * prettier
+
+## ディレクトリ
+
+### /public/
+assets関連のファイルを設置する
+
+※componentsからのパスはpublicを省略可
+
+```
+/public/img/ ・・・画像
+```
+
+
