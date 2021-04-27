@@ -1,5 +1,7 @@
 <template>
-  <component :is="`h${level}`" :class="`lv${level}`">{{ label }}</component>
+  <component :is="`h${level}`" :class="`lv${level}`" class="heading">{{
+    label
+  }}</component>
 </template>
 
 <script>
@@ -18,8 +20,14 @@ export default {
 </script>
 
 <style scoped>
+.heading {
+  color: var(--color-strong);
+}
 .lv1 {
   font-size: 1.8rem;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9);
 }
 .lv2 {
   font-size: 1.6rem;
