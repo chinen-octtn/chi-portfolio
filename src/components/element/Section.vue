@@ -12,13 +12,21 @@ export default {}
 
 <style scoped>
 .section {
-  margin: 50px 0;
+  margin: 50px auto;
+  max-width: 600px;
   background: var(--color-light);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3),
-    inset 0px -5px 5px rgba(255, 255, 255, 0.8),
-    inset 5px 5px 5px var(--alpha-main);
+  box-shadow: inset 0 0 5px var(--alpha-main);
   /* border-top: 20px solid transparent;
   border-bottom: 20px solid transparent; */
+}
+
+@media print, screen and (min-width: 768px) {
+  .section {
+    margin-top: 100px;
+    border-radius: 4px;
+    box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.3),
+      inset 5px 5px 5px var(--alpha-main);
+  }
 }
 
 .inner {
