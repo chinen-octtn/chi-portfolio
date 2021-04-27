@@ -1,6 +1,8 @@
 :root {
   --color-main: #602d1d;
   --color-light: #f8ede9;/* lighten 70% */
-  --color-bg: #d58b74;/* lighten 70% */
+  --color-bg: #edccc2;/* lighten 60% */
+  --color-strong: #391b11;/* darken 10% */
+  --color-text: #333;/* darken 10% */
   --alpha-main: rgba(96, 45, 29, 0.3);/* main 30% */
 }
