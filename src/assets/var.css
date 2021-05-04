@@ -5,4 +5,5 @@
   --color-strong: #391b11;/* darken 10% */
   --color-text: #333;/* darken 10% */
   --alpha-main: rgba(96, 45, 29, 0.3);/* main 30% */
+  --alpha-white: rgba(255, 255, 255, 0.3);/* main 30% */
 }

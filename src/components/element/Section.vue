@@ -1,5 +1,5 @@
 <template>
-  <section class="section">
+  <section class="section" :class="{ block: block }">
     <div class="inner">
       <slot />
     </div>
@@ -7,42 +7,68 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    block: {
+      type: Boolean,
+      default: false,
+    },
+  },
+}
 </script>
 
 <style scoped>
 .section {
-  margin: 50px auto;
+  margin-top: 25px;
+}
+.block {
+  margin-top: 50px;
   max-width: 600px;
-  background: var(--color-light);
-  box-shadow: inset 0 0 5px var(--alpha-main);
-  /* border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent; */
+  /* background: var(--color-light); */
+  /* box-shadow: inset 0 0 5px var(--alpha-main); */
+  position: relative;
+  box-shadow: inset -5px -5px 5px var(--alpha-white),
+    inset 5px 5px 5px var(--alpha-main);
 }
 
 @media print, screen and (min-width: 768px) {
-  .section {
-    margin-top: 100px;
+  .block {
+    margin: 100px auto 0;
     border-radius: 4px;
-    box-shadow: inset -5px -5px 5px rgba(255, 255, 255, 0.3),
-      inset 5px 5px 5px var(--alpha-main);
   }
 }
 
-.inner {
-  padding: 40px;
-}
-
-/* .section::before,
-.section::after {
+.block::after {
   content: '';
   display: block;
-  height: 10px;
+  height: 50px;
+  width: 8px;
+  background: var(--color-bg);
+  position: absolute;
+  box-shadow: 2px 0 2px var(--alpha-white), inset 2px 0 2px var(--alpha-main);
 }
-.section::before {
-  background: linear-gradient(rgba(255, 255, 255, 1), transparent);
+.block:nth-child(even):after {
+  bottom: 100%;
+  left: 10%;
 }
-.section::after {
-  background: linear-gradient(transparent, var(--alpha-main));
-} */
+.block:nth-child(odd)::after {
+  bottom: 100%;
+  right: 10%;
+}
+
+@media print, screen and (min-width: 768px) {
+  .block::after {
+    height: 100px;
+  }
+}
+
+.block > .inner {
+  padding: 20px;
+}
+
+@media print, screen and (min-width: 768px) {
+  .block > .inner {
+    padding: 40px;
+  }
+}
 </style>
