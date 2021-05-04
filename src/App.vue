@@ -1,12 +1,14 @@
 <template>
   <TheWrap>
+    <Heading level="1" label="Karachoco Code" />
     <Section>
-      <Heading level="1" label="H1見出し" />
-      <Heading level="2" label="H2見出し" />
-      <Heading level="3" label="H3見出し" />
-      <Heading level="4" label="H4見出し" />
-      <Heading level="5" label="H5見出し" />
-      <p>見出し</p>
+      <Heading level="2" label="TOPページ" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel impedit
+        minus cum? Officiis sint ut, minus perspiciatis consequatur totam
+        voluptatibus ab rem tempore fugit quo nisi deleniti maiores reiciendis
+        at.
+      </p>
     </Section>
   </TheWrap>
 </template>
