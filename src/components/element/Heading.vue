@@ -22,6 +22,7 @@ export default {
 <style scoped>
 .heading {
   color: var(--color-strong);
+  margin-bottom: 8px;
 }
 .lv1 {
   font-size: 1.8rem;
