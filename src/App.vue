@@ -3,6 +3,7 @@
     <TheHeader title="Karachoco Code" top="true" />
     <Section block="true">
       <Heading level="2" label="TOPページ" />
+      <p><a href="/styleguide/">Styleguide</a></p>
     </Section>
   </TheWrap>
 </template>
