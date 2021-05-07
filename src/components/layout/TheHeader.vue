@@ -1,11 +1,11 @@
 <template>
   <header class="header">
     <div class="inner">
-      <a href="/" class="logo">
+      <router-link to="/" class="logo">
         <h1 class="logo_text">
           {{ title }}<span v-if="!top" class="logo_sub"> - Karachoco Code</span>
         </h1>
-      </a>
+      </router-link>
     </div>
   </header>
 </template>

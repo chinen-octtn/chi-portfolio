@@ -1,5 +1,8 @@
 <template>
-  <p class="text">{{ text }}</p>
+  <p class="text">
+    {{ text }}
+    <slot />
+  </p>
 </template>
 
 <script>
@@ -7,7 +10,7 @@ export default {
   props: {
     text: {
       type: String,
-      required: true,
+      default: '',
     },
   },
 }
