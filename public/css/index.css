@@ -4,6 +4,11 @@
 #app {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* perspective: 20vw;
+  transform-style: preserve-3d;
+  position: relative;
+  z-index: 3;
+  transform: translate3d(0, 0, 5vw) rotateY(-20deg) rotateX(-20deg); */
 }
 
 html {
