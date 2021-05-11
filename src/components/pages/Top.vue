@@ -30,7 +30,6 @@
     </Section>
     <Section block="true">
       <Heading level="2" label="Skill" />
-      <Text text="マークアップ・フロントエンドが得意です。" />
 
       <Section>
         <Heading level="3" label="HTML" />
@@ -51,7 +50,7 @@
       <Section>
         <Heading level="3" label="Webコンサルティング" />
         <Text
-          text="フロントエンド人材育成 / 技術的な質問・相談 / Web運用サポート / SEO"
+          text="技術的な質問・相談 / Web運用サポート / SEO / テクニカルディレクション / フロントエンド人材育成"
         />
       </Section>
     </Section>
