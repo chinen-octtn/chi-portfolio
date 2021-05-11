@@ -22,7 +22,6 @@ export default {
 <style scoped>
 .heading {
   color: var(--color-strong);
-  margin-bottom: 8px;
   font-weight: 400;
 }
 .lv1 {
@@ -34,6 +33,7 @@ export default {
 .lv2 {
   font-size: 1.6rem;
   font-weight: 600;
+  margin-bottom: 8px;
 }
 .lv3 {
   font-size: 1.4rem;
