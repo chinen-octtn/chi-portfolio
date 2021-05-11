@@ -20,4 +20,5 @@ html {
   "Hiragino Sans",
   Meiryo,
   sans-serif;
+  overflow-y: scroll;
 };

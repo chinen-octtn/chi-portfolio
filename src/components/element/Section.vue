@@ -19,11 +19,12 @@ export default {
 
 <style scoped>
 .section {
-  margin-top: 25px;
+  margin-top: 50px;
 }
 .block {
-  margin-top: 50px;
+  margin-top: 25vh;
   max-width: 600px;
+  min-height: 50vh;
   /* background: var(--color-light); */
   /* box-shadow: inset 0 0 5px var(--alpha-main); */
   position: relative;
@@ -33,7 +34,8 @@ export default {
 
 @media print, screen and (min-width: 768px) {
   .block {
-    margin: 100px auto 0;
+    margin-right: auto;
+    margin-left: auto;
     border-radius: 4px;
   }
 }
@@ -41,7 +43,7 @@ export default {
 .block::after {
   content: '';
   display: block;
-  height: 50px;
+  height: 25vh;
   width: 8px;
   background: var(--color-bg);
   position: absolute;
@@ -54,12 +56,6 @@ export default {
 .block:nth-child(odd)::after {
   bottom: 100%;
   right: 10%;
-}
-
-@media print, screen and (min-width: 768px) {
-  .block::after {
-    height: 100px;
-  }
 }
 
 .block > .inner {
