@@ -3,7 +3,9 @@
     <router-link v-if="!blank" class="button" :to="link">{{
       text
     }}</router-link>
-    <a v-else class="button" :href="link" target="_blank">{{ text }}</a>
+    <a v-else class="button" :href="link" target="_blank" rel="noreferrer">{{
+      text
+    }}</a>
   </p>
 </template>
 
