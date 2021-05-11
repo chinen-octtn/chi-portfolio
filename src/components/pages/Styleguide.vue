@@ -45,7 +45,6 @@ import Heading from '../element/Heading.vue'
 import Text from '../element/Text.vue'
 
 export default {
-  name: 'Styleguide',
   components: {
     TheWrap,
     TheHeader,

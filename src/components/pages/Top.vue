@@ -20,7 +20,6 @@ import Section from '../element/Section.vue'
 import Heading from '../element/Heading.vue'
 
 export default {
-  name: 'App',
   components: {
     TheWrap,
     TheHeader,
