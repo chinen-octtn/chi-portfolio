@@ -21,4 +21,8 @@ html {
   Meiryo,
   sans-serif;
   overflow-y: scroll;
-};
+}
+
+a {
+  color: var(--color-link);
+}
