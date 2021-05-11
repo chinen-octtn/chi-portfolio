@@ -23,6 +23,7 @@ export default {
 .heading {
   color: var(--color-strong);
   margin-bottom: 8px;
+  font-weight: 400;
 }
 .lv1 {
   font-size: 1.8rem;
@@ -32,6 +33,7 @@ export default {
 }
 .lv2 {
   font-size: 1.6rem;
+  font-weight: 600;
 }
 .lv3 {
   font-size: 1.4rem;
