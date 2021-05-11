@@ -24,7 +24,7 @@ export default {
 .block {
   margin-top: 20vh;
   max-width: 600px;
-  min-height: 50vh;
+  min-height: 40vh;
   /* background: var(--color-light); */
   /* box-shadow: inset 0 0 5px var(--alpha-main); */
   position: relative;
@@ -59,7 +59,7 @@ export default {
 }
 
 .block > .inner {
-  padding: 20px;
+  padding: 40px 20px;
 }
 
 @media print, screen and (min-width: 768px) {
