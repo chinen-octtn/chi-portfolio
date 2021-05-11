@@ -1,8 +1,5 @@
 <template>
-  <p class="text">
-    {{ text }}
-    <slot />
-  </p>
+  <p class="text" v-html="text"></p>
 </template>
 
 <script>
@@ -19,5 +16,6 @@ export default {
 <style scoped>
 .text {
   color: var(--color-text);
+  line-height: 1.8;
 }
 </style>
