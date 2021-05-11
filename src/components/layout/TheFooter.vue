@@ -8,6 +8,19 @@
 
 <style scoped>
 .footer {
+  position: relative;
+}
+.footer::before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  height: 20vh;
+  width: 8px;
+  background: var(--color-bg);
+  box-shadow: 2px 0 2px var(--alpha-white), inset 2px 0 2px var(--alpha-main);
+}
+
+.inner {
   position: fixed;
   bottom: 20px;
   right: 20px;
