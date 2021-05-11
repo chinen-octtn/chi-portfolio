@@ -4,17 +4,23 @@
     <Section block="true">
       <Heading level="2" label="Hello world !" />
       <Text
-        text="東京都内のデジタルエージェンシーの社員としてフロントエンドエンジニアをしながら、個人でフリーランスとしてWebに関する相談・運用サポートやフロントエンド開発を引き受けています。"
+        text="東京都内のデジタルエージェンシーの社員としてフロントエンドエンジニアをしながら、個人でフリーランスとしてWebに関する相談・運用サポートやフロントエンド開発をしています。悩みを聞いて、一緒に解決していくことが得意です。"
       />
       <Separate size="1" />
       <Text
-        text="お仕事の相談はTwitterのDMまでお願いします。<br>気軽にご相談ください。"
+        text="お仕事の相談はTwitterのDMまでお願いします。気軽に相談してください。"
+      />
+    </Section>
+    <Section block="true">
+      <Heading level="2" label="News" />
+      <Text
+        text="2021年は週に最大1日ほどしか空きがありません。規模の大きい依頼の場合は本業の方を紹介することも可能です。"
       />
     </Section>
     <Section block="true">
       <Heading level="2" label="Profile" />
       <Text
-        text="まぁし<a href='https://twitter.com/chocodogmagic' target='_blank' rel='noreferrer'>@Twitter</a>"
+        text="まぁし<a href='https://twitter.com/chocodogmagic' target='_blank' rel='noreferrer'>@Twitter</a> / <a href='https://github.com/chinen-octtn' target='_blank' rel='noreferrer'>@GitHub</a>"
       />
       <Text text="MASASHI CHINEN" />
       <Text text="Tech Community運営：PWA Night / v-okinawa" />
