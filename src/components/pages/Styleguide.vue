@@ -31,6 +31,7 @@
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias, ea corporis natus consequuntur sint provident aperiam fugit perferendis culpa. Magni fugit eos repudiandae ad rem iusto ipsam tenetur in."
       />
     </Section>
+    <TheFooter />
   </TheWrap>
 </template>
 
@@ -38,6 +39,7 @@
 import '../../assets/var.css'
 import TheWrap from '../layout/TheWrap.vue'
 import TheHeader from '../layout/TheHeader.vue'
+import TheFooter from '../layout/TheFooter.vue'
 import Section from '../element/Section.vue'
 import Heading from '../element/Heading.vue'
 import Text from '../element/Text.vue'
@@ -47,6 +49,7 @@ export default {
   components: {
     TheWrap,
     TheHeader,
+    TheFooter,
     Section,
     Heading,
     Text,
