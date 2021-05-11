@@ -2,10 +2,58 @@
   <TheWrap>
     <TheHeader title="Karachoco Code" top="true" />
     <Section block="true">
-      <Heading level="2" label="TOPページ" />
-      <Text>
-        <router-link to="/styleguide">Go to Styleguide</router-link>
-      </Text>
+      <Heading level="2" label="Hello world !" />
+      <Text
+        text="東京都内のデジタルエージェンシーの社員としてフロントエンドエンジニアをしながら、個人でフリーランスとしてWebに関する相談・運用サポートやフロントエンド開発を引き受けています。"
+      />
+      <Separate size="1" />
+      <Text
+        text="お仕事の相談はTwitterのDMまでお願いします。<br>気軽にご相談ください。"
+      />
+    </Section>
+    <Section block="true">
+      <Heading level="2" label="Profile" />
+      <Text
+        text="まぁし<a href='https://twitter.com/chocodogmagic' target='_blank' rel='noreferrer'>@Twitter</a>"
+      />
+      <Text text="MASASHI CHINEN" />
+      <Text text="Tech Community運営：PWA Night / v-okinawa" />
+      <Text
+        text="著書：<a href='https://booth.pm/ja/items/1312648' target='_blank' rel='noreferrer'>実践PWA（共著）</a> / <a href='https://booth.pm/ja/items/1573699' target='_blank' rel='noreferrer'>すぐに現場で使えるフロントエンドTips集（共著）</a>"
+      />
+      <Separate size="2" />
+      <Button
+        link="https://twitter.com/chocodogmagic"
+        blank="true"
+        text="ご相談はDMまで"
+      />
+    </Section>
+    <Section block="true">
+      <Heading level="2" label="Skill" />
+      <Text text="マークアップ・フロントエンドが得意です。" />
+
+      <Section>
+        <Heading level="3" label="HTML" />
+        <Text text="パフォーマンス / セマンティック / アクセシビリティ" />
+      </Section>
+      <Section>
+        <Heading level="3" label="CSS" />
+        <Text text="CSS設計 / CSSアニメーション" />
+      </Section>
+      <Section>
+        <Heading level="3" label="JavaScript" />
+        <Text text="Vanilla JS / PWA / Vue.js / jQuery" />
+      </Section>
+      <Section>
+        <Heading level="3" label="CMS" />
+        <Text text="microCMS / Movable Type / WordPress" />
+      </Section>
+      <Section>
+        <Heading level="3" label="Webコンサルティング" />
+        <Text
+          text="フロントエンド人材育成 / 技術的な質問・相談 / Web運用サポート / SEO"
+        />
+      </Section>
     </Section>
     <TheFooter />
   </TheWrap>
@@ -18,6 +66,9 @@ import TheHeader from '../layout/TheHeader.vue'
 import TheFooter from '../layout/TheFooter.vue'
 import Section from '../element/Section.vue'
 import Heading from '../element/Heading.vue'
+import Button from '../element/Button.vue'
+import Text from '../element/Text.vue'
+import Separate from '../element/Separate.vue'
 
 export default {
   components: {
@@ -26,6 +77,9 @@ export default {
     TheFooter,
     Section,
     Heading,
+    Button,
+    Text,
+    Separate,
   },
 }
 </script>
