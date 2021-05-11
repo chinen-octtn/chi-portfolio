@@ -19,10 +19,10 @@ export default {
 
 <style scoped>
 .section {
-  margin-top: 50px;
+  margin-top: 32px;
 }
 .block {
-  margin-top: 25vh;
+  margin-top: 20vh;
   max-width: 600px;
   min-height: 50vh;
   /* background: var(--color-light); */
@@ -43,7 +43,7 @@ export default {
 .block::after {
   content: '';
   display: block;
-  height: 25vh;
+  height: 20vh;
   width: 8px;
   background: var(--color-bg);
   position: absolute;
