@@ -4,7 +4,7 @@
     <Section block="true">
       <Heading level="2" label="H2見出し" />
       <Text
-        text="テキストサンプルテキストサンプルテキストサンプルテキストサンプル"
+        text="テキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプルテキストサンプル"
       />
       <Section>
         <Heading level="3" label="H3見出し" />
@@ -31,6 +31,12 @@
         text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus alias, ea corporis natus consequuntur sint provident aperiam fugit perferendis culpa. Magni fugit eos repudiandae ad rem iusto ipsam tenetur in."
       />
     </Section>
+    <Section block="true">
+      <Heading level="2" label="ボタン" />
+      <Button link="/styleguide" text="button" />
+      <Separate size="2" />
+      <Button link="/styleguide" text="長いテキストの場合はこうなります" />
+    </Section>
     <TheFooter />
   </TheWrap>
 </template>
@@ -43,6 +49,8 @@ import TheFooter from '../layout/TheFooter.vue'
 import Section from '../element/Section.vue'
 import Heading from '../element/Heading.vue'
 import Text from '../element/Text.vue'
+import Button from '../element/Button.vue'
+import Separate from '../element/Separate.vue'
 
 export default {
   components: {
@@ -52,6 +60,8 @@ export default {
     Section,
     Heading,
     Text,
+    Button,
+    Separate,
   },
 }
 </script>
