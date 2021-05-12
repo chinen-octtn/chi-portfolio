@@ -1,5 +1,5 @@
 <template>
-  <div :style="`margin-top: ${separate}px;`">
+  <div :style="`margin-top: ${separate}px;`" aria-hidden="true">
     <slot />
   </div>
 </template>
