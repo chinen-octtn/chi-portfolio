@@ -4,11 +4,27 @@
     <Section block="true">
       <Heading level="2" label="Hello world !" />
       <Text
-        text="東京都内のデジタルエージェンシーの社員としてフロントエンドエンジニアをしながら、個人でフリーランスとしてWebに関する相談・運用サポートやフロントエンド開発をしています。悩みを聞いて、一緒に解決していくことが得意です。"
+        text="デジタルエージェンシーの社員としてフロントエンドエンジニアをしています。個人ではフリーランスとしてWebに関する相談・運用サポートやフロントエンド開発をしています。"
       />
       <Separate size="1" />
+      <Text text="希望や悩みを聞いて、一緒に解決していくことが得意です。" />
+    </Section>
+    <Section block="true">
+      <Heading level="2" label="Contact" />
       <Text
-        text="お仕事の相談はTwitterのDMまでお願いします。気軽に相談してください。"
+        text="個人への仕事の依頼は、お問い合わせフォームかTwitterのDMでお願いします。気軽に相談してください。"
+      />
+      <Separate size="2" />
+      <Button
+        link="https://forms.gle/w8UwVtMrtS1D95sy7"
+        blank="true"
+        text="お問い合わせフォーム"
+      />
+      <Separate size="1" />
+      <Button
+        link="https://twitter.com/chocodogmagic"
+        blank="true"
+        text="Twitter"
       />
     </Section>
     <Section block="true">
