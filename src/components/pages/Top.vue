@@ -7,12 +7,14 @@
         text="デジタルエージェンシーの社員としてフロントエンドエンジニアをしています。個人ではフリーランスとしてWebに関する相談・運用サポートやフロントエンド開発をしています。"
       />
       <Separate size="1" />
-      <Text text="希望や悩みを聞いて、一緒に改善策を模索しながら解決します。" />
+      <Text
+        text="希望や悩みを聞いて、一緒に改善策を模索しながら解決します。クライアント様やデザイナーと直接話してWeb開発に取り組むことが得意です。"
+      />
     </Section>
     <Section block="true">
       <Heading level="2" label="Contact" />
       <Text
-        text="個人への仕事の依頼は、お問い合わせフォームかTwitterのDMでお願いします。気軽に相談してください。"
+        text="お仕事の相談は、TwitterのDMかお問い合わせフォームへお願いします。"
       />
       <Separate size="2" />
       <Button
@@ -30,25 +32,43 @@
     <Section block="true">
       <Heading level="2" label="News" />
       <Text
-        text="2021年は週に最大1日ほどしか空きがありません。規模の大きい依頼の場合は本業の方を紹介することも可能です。"
+        text="2021年は週に最大1日ほどしか空きがありません。規模の大きい依頼は難しいかもしれません。本業の方を紹介することも可能です。"
       />
     </Section>
     <Section block="true">
       <Heading level="2" label="Profile" />
+      <Text text="まぁし / MASASHI CHINEN" />
+      <Section>
+        <Heading level="3" label="SNS" />
+        <Text
+          text="<a href='https://twitter.com/chocodogmagic' target='_blank' rel='noreferrer'>Twitter</a> / <a href='https://github.com/chinen-octtn' target='_blank' rel='noreferrer'>GitHub</a>"
+        />
+      </Section>
+
       <Text
-        text="まぁし<a href='https://twitter.com/chocodogmagic' target='_blank' rel='noreferrer'>@Twitter</a> / <a href='https://github.com/chinen-octtn' target='_blank' rel='noreferrer'>@GitHub</a>"
+        text="Tech Community運営：<a href='https://pwanight.connpass.com/' target='_blank' rel='noreferrer'>PWA Night</a> / <a href='https://v-okinawa.connpass.com/' target='_blank' rel='noreferrer'>v-okinawa</a> / <a href='https://twitter.com/search?q=%23ohayo_engineer&amp;f=live' target='_blank' rel='noreferrer'>おはようエンジニア</a>"
       />
-      <Text text="MASASHI CHINEN" />
-      <Text text="Tech Community運営：PWA Night / v-okinawa" />
-      <Text
-        text="著書：<a href='https://booth.pm/ja/items/1312648' target='_blank' rel='noreferrer'>実践PWA（共著）</a> / <a href='https://booth.pm/ja/items/1573699' target='_blank' rel='noreferrer'>すぐに現場で使えるフロントエンドTips集（共著）</a>"
-      />
-      <Separate size="2" />
-      <Button
-        link="https://twitter.com/chocodogmagic"
-        blank="true"
-        text="ご相談はDMまで"
-      />
+      <Section>
+        <Heading level="3" label="著書" />
+        <ul>
+          <li>
+            <a
+              href="https://booth.pm/ja/items/1312648"
+              target="_blank"
+              rel="noreferrer"
+              >実践PWA（共著）</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://booth.pm/ja/items/1573699"
+              target="_blank"
+              rel="noreferrer"
+              >すぐに現場で使えるフロントエンドTips集（共著）</a
+            >
+          </li>
+        </ul>
+      </Section>
     </Section>
     <Section block="true">
       <Heading level="2" label="Skill" />

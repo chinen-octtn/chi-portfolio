@@ -26,3 +26,8 @@ html {
 a {
   color: var(--color-link);
 }
+
+ul {
+  margin: 0;
+  padding-left: 1.6em;
+}
