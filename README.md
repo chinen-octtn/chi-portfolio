@@ -11,8 +11,14 @@ npm run dev
 ```
 
 ## Vite
-ローカル開発環境のベースはViteを採用
+ローカル開発環境はViteを採用
 https://vitejs.dev/
+
+* Select a framework: › vue
+* Select a variant: › vue-ts
+
+## ライブラリ
+* vue-router
 
 ## eslint + autoformat
 * eslint
