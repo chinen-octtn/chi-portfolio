@@ -1,17 +1,16 @@
-<template>
-  <p class="text" v-html="text"></p>
-</template>
-
-<script>
-export default {
-  props: {
+<script setup lang="ts">
+  const props = defineProps({
     text: {
       type: String,
       default: '',
-    },
-  },
-}
+    }
+  })
 </script>
+
+
+<template>
+  <p class="text" v-html="props.text"></p>
+</template>
 
 <style scoped>
 .text {

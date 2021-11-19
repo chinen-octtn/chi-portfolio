@@ -1,21 +1,19 @@
+<script setup lang="ts">
+  const props = defineProps({
+    block: {
+      type: Boolean,
+      default: false,
+    },
+  })
+</script>
+
 <template>
-  <section class="section" :class="{ block: block }">
+  <section class="section" :class="{ block: props.block }">
     <div class="inner">
       <slot />
     </div>
   </section>
 </template>
-
-<script>
-export default {
-  props: {
-    block: {
-      type: Boolean,
-      default: false,
-    },
-  },
-}
-</script>
 
 <style scoped>
 .section {

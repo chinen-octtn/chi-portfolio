@@ -1,18 +1,6 @@
-<template>
-  <p>
-    <router-link v-if="!blank" class="button" :to="link">{{
-      text
-    }}</router-link>
-    <a v-else class="button" :href="link" target="_blank" rel="noreferrer">{{
-      text
-    }}</a>
-  </p>
-</template>
-
-<script>
-export default {
-  props: {
-    link: {
+<script setup lang="ts">
+  const props = defineProps({
+     link: {
       type: String,
       default: '',
     },
@@ -24,9 +12,19 @@ export default {
       type: String,
       required: true,
     },
-  },
-}
+  })
 </script>
+
+<template>
+  <p>
+    <router-link v-if="!props.blank" class="button" :to="props.link">{{
+      props.text
+    }}</router-link>
+    <a v-else class="button" :href="props.link" target="_blank" rel="noreferrer">{{
+      props.text
+    }}</a>
+  </p>
+</template>
 
 <style scoped>
 .button {

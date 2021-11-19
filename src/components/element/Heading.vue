@@ -1,23 +1,21 @@
-<template>
-  <component :is="`h${level}`" :class="`lv${level}`" class="heading">{{
-    label
-  }}</component>
-</template>
-
-<script>
-export default {
-  props: {
-    level: {
+<script setup lang="ts">
+  const props = defineProps({
+     level: {
       type: String,
       required: true,
     },
     label: {
       type: String,
       required: true,
-    },
-  },
-}
+    }
+  })
 </script>
+
+<template>
+  <component :is="`h${props.level}`" :class="`lv${props.level}`" class="heading">{{
+    label
+  }}</component>
+</template>
 
 <style scoped>
 .heading {
