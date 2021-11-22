@@ -1,18 +1,5 @@
-<template>
-  <header class="header">
-    <div class="inner">
-      <router-link to="/" class="logo">
-        <h1 class="logo_text">
-          {{ title }}<span v-if="!top" class="logo_sub"> - Karachoco Code</span>
-        </h1>
-      </router-link>
-    </div>
-  </header>
-</template>
-
-<script>
-export default {
-  props: {
+<script setup lang="ts">
+  const props = defineProps({
     top: {
       type: Boolean,
       default: false,
@@ -21,9 +8,20 @@ export default {
       type: String,
       required: true,
     },
-  },
-}
+  })
 </script>
+
+<template>
+  <header class="header">
+    <div class="inner">
+      <router-link to="/" class="logo">
+        <h1 class="logo_text">
+          {{ props.title }}<span v-if="!props.top" class="logo_sub"> - Karachoco Code</span>
+        </h1>
+      </router-link>
+    </div>
+  </header>
+</template>
 
 <style scoped>
 .header {
