@@ -21,6 +21,7 @@ html {
   Meiryo,
   sans-serif;
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 a {

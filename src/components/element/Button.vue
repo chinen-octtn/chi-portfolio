@@ -1,6 +1,10 @@
 <script setup lang="ts">
   const props = defineProps({
-     link: {
+    link: {
+      type: String,
+      default: '',
+    },
+    hash: {
       type: String,
       default: '',
     },
@@ -17,12 +21,18 @@
 
 <template>
   <p>
-    <router-link v-if="!props.blank" class="button" :to="props.link">{{
-      props.text
-    }}</router-link>
-    <a v-else class="button" :href="props.link" target="_blank" rel="noreferrer">{{
+    <a v-if="props.hash" class="button" :href="props.hash">{{
       props.text
     }}</a>
+
+    <template v-else>
+      <router-link v-if="!props.blank" class="button" :to="props.link">{{
+        props.text
+      }}</router-link>
+      <a v-else class="button" :href="props.link" target="_blank" rel="noreferrer">{{
+        props.text
+      }}</a>
+    </template>
   </p>
 </template>
 

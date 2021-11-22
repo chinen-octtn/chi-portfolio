@@ -26,6 +26,11 @@ import Separate from '../element/Separate.vue'
       <Text
         text="希望や悩みを聞いて、改善策を一緒に模索します。クライアント様やデザイナーと直接話してWeb開発に取り組みます。"
       />
+      <Separate :size="1" />
+      <Button
+        hash="#profile"
+        text="Profile"
+      />
     </Section>
     <Section :block="true">
       <Heading level="2" label="Contact" />
