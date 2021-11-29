@@ -14,7 +14,7 @@ import Separate from '../element/Separate.vue'
   <TheWrap>
     <TheHeader title="Karachoco Code" :top="true" />
     <Section :block="true">
-      <Heading level="2" label="Hello world !" />
+      <Heading :level="2" label="Hello world !" />
       <Text
         text="フロントエンドエンジニア。都内デジタルエージェンシーでフロントエンドを担当しています。CMSを導入した大規模サイト制作やセマンティック/アクセシビリティに配慮したマークアップが得意で、Vue.js、PWA等のJavaScriptの実装も担当しています。開発だけでなく新人エンジニア育成やお客様向けに技術サポートのレクチャーやテクニカルディレクションも兼務しています。"
       />
@@ -33,34 +33,34 @@ import Separate from '../element/Separate.vue'
       />
     </Section>
     <Section :block="true">
-      <Heading level="2" label="Contact" />
+      <Heading :level="2" label="Contact" />
       <Text
         text="お仕事の相談は、TwitterのDMかお問い合わせフォームへお願いします。"
       />
       <Separate :size="2" />
       <Button
         link="https://forms.gle/w8UwVtMrtS1D95sy7"
-        blank="true"
+        :blank="true"
         text="お問い合わせフォーム"
       />
       <Separate :size="1" />
       <Button
         link="https://twitter.com/chocodogmagic"
-        blank="true"
+        :blank="true"
         text="Twitter"
       />
     </Section>
     <Section :block="true">
-      <Heading level="2" label="News" />
+      <Heading :level="2" label="News" />
       <Text
         text="2021年は週に最大1日ほどしか空きがありません。規模の大きい依頼は難しいかもしれません。本業の方を紹介することも可能です。"
       />
     </Section>
     <Section :block="true" id="profile">
-      <Heading level="2" label="Profile" />
+      <Heading :level="2" label="Profile" />
       <Text text="まぁし / MASASHI CHINEN" />
       <Section>
-        <Heading level="3" label="SNS" />
+        <Heading :level="3" label="SNS" />
         <Text
           text="<a href='https://twitter.com/chocodogmagic' target='_blank' rel='noreferrer'>Twitter</a> / <a href='https://github.com/chinen-octtn' target='_blank' rel='noreferrer'>GitHub</a>"
         />
@@ -70,7 +70,7 @@ import Separate from '../element/Separate.vue'
         text="Tech Community運営：<a href='https://pwanight.connpass.com/' target='_blank' rel='noreferrer'>PWA Night</a> / <a href='https://v-okinawa.connpass.com/' target='_blank' rel='noreferrer'>v-okinawa</a> / <a href='https://twitter.com/search?q=%23ohayo_engineer&amp;f=live' target='_blank' rel='noreferrer'>おはようエンジニア</a>"
       />
       <Section>
-        <Heading level="3" label="著書" />
+        <Heading :level="3" label="著書" />
         <ul>
           <li>
             <a
@@ -92,26 +92,26 @@ import Separate from '../element/Separate.vue'
       </Section>
     </Section>
     <Section :block="true">
-      <Heading level="2" label="Skill" />
+      <Heading :level="2" label="Skill" />
 
       <Section>
-        <Heading level="3" label="HTML" />
+        <Heading :level="3" label="HTML" />
         <Text text="パフォーマンス / セマンティック / アクセシビリティ" />
       </Section>
       <Section>
-        <Heading level="3" label="CSS" />
+        <Heading :level="3" label="CSS" />
         <Text text="CSS設計 / CSSアニメーション" />
       </Section>
       <Section>
-        <Heading level="3" label="JavaScript" />
+        <Heading :level="3" label="JavaScript" />
         <Text text="Vanilla JS / PWA / Vue.js / jQuery" />
       </Section>
       <Section>
-        <Heading level="3" label="CMS" />
+        <Heading :level="3" label="CMS" />
         <Text text="microCMS / Movable Type / WordPress" />
       </Section>
       <Section>
-        <Heading level="3" label="Webコンサルティング" />
+        <Heading :level="3" label="Webコンサルティング" />
         <Text
           text="技術的な質問・相談 / Web運用サポート / SEO / テクニカルディレクション / フロントエンド人材育成"
         />

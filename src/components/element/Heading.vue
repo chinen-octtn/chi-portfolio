@@ -1,7 +1,7 @@
 <script setup lang="ts">
   const props = defineProps({
      level: {
-      type: String,
+      type: Number,
       required: true,
     },
     label: {
