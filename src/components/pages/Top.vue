@@ -8,6 +8,8 @@ import Heading from '../element/Heading.vue'
 import Button from '../element/Button.vue'
 import Text from '../element/Text.vue'
 import Separate from '../element/Separate.vue'
+import NewsList from '../element/NewsList.vue'
+import NewsItem from '../element/NewsItem.vue'
 </script>
 
 <template>
@@ -52,9 +54,7 @@ import Separate from '../element/Separate.vue'
     </Section>
     <Section :block="true">
       <Heading :level="2" label="News" />
-      <Text
-        text="2021年は週に最大1日ほどしか空きがありません。規模の大きい依頼は難しいかもしれません。本業の方を紹介することも可能です。"
-      />
+      <NewsList :list="[{date: '2021.11.29', text: 'ありがたいことに2021年は予定がいっぱいになりました。ご依頼は2022年1月以降から引き受けられます。'},{date: '2021.06.01', text: '2021年は週に最大1日ほどしか空きがありません。規模の大きい依頼は難しいかもしれません。本業の方を紹介することも可能です。'},{date: '2021.04.15', text: '事業開始しました。Web制作・コンサルティングのお仕事をします。'},]" />
     </Section>
     <Section :block="true" id="profile">
       <Heading :level="2" label="Profile" />
