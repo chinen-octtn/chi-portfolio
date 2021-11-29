@@ -104,7 +104,7 @@ import NewsItem from '../element/NewsItem.vue'
       </Section>
       <Section>
         <Heading :level="3" label="JavaScript" />
-        <Text text="Vanilla JS / PWA / Vue.js / jQuery" />
+        <Text text="Vanilla JS / PWA / Vue.js / Nuxt.js / Jamstack / jQuery" />
       </Section>
       <Section>
         <Heading :level="3" label="CMS" />
