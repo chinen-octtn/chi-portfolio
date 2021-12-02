@@ -13,12 +13,16 @@
   <ul class="newsList">
     <li v-for="item in props.list"
     >
-      <NewsItem :date="item.date" :text="item.text" />
+      <NewsItem :date="new Date(item.date)" :text="item.title" />
     </li>
   </ul>
 </template>
 
 <style scoped>
+.newsList {
+  list-style: none;
+  padding: 0;
+}
 .newsList > li + li {
   margin-top: 1em;
 }

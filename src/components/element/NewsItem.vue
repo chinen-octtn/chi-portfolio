@@ -1,7 +1,7 @@
 <script setup lang="ts">
   const props = defineProps({
     date: {
-      type: String,
+      type: Date,
       default: '',
     },
     text: {
@@ -9,22 +9,22 @@
       required: true,
     },
   })
+
+  const formatDate = (date: Date) => {
+    date.setHours(date.getHours() + 9);
+    return `${date.getFullYear()}年${date.getMonth()+1}月${date.getDate()}日`
+  }
 </script>
 
 <template>
-  <dl class="newsItem">
-    <dt>{{ date
-     }}</dt>
-    <dd>{{ text }}</dd>
-  </dl>
+  <div class="newsItem">
+    <time :datetime="String(props.date)" class="date">{{ formatDate(props.date) }}</time>
+    <p class="title">{{ props.text }}</p>
+  </div>
 </template>
 
 <style scoped>
-.newsItem {
-  display: flex;
-
-}
-.newsItem > dt {
-  margin-right: 1.5em;
+.date {
+  color: var(--color-strong);
 }
 </style>

@@ -9,7 +9,18 @@ import Button from '../element/Button.vue'
 import Text from '../element/Text.vue'
 import Separate from '../element/Separate.vue'
 import NewsList from '../element/NewsList.vue'
-import NewsItem from '../element/NewsItem.vue'
+import axios from 'axios'
+import { ref } from 'vue'
+
+let cmsData = ref([])
+
+axios.get('https://chi-portfolio.microcms.io/api/v1/blog', { headers: { 'X-MICROCMS-API-KEY': import.meta.env.VITE_API_KEY }})
+  .then(response => {
+    cmsData.value = response.data.contents
+  })
+  .catch(error => {
+    console.log(error);
+  });
 </script>
 
 <template>
@@ -54,7 +65,7 @@ import NewsItem from '../element/NewsItem.vue'
     </Section>
     <Section :block="true">
       <Heading :level="2" label="News" />
-      <NewsList :list="[{date: '2021.11.29', text: 'ありがたいことに2021年は予定がいっぱいになりました。ご依頼は2022年1月以降から引き受けられます。'},{date: '2021.06.01', text: '2021年は週に最大1日ほどしか空きがありません。規模の大きい依頼は難しいかもしれません。本業の方を紹介することも可能です。'},{date: '2021.04.15', text: '事業開始しました。Web制作・コンサルティングのお仕事をします。'},]" />
+      <NewsList :list="cmsData" />
     </Section>
     <Section :block="true" id="profile">
       <Heading :level="2" label="Profile" />
