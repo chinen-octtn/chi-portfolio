@@ -14,7 +14,7 @@ import { ref } from 'vue'
 
 let cmsData = ref([])
 
-axios.get('https://chi-portfolio.microcms.io/api/v1/blog', { headers: { 'X-MICROCMS-API-KEY': import.meta.env.VITE_API_KEY }})
+axios.get('https://chi-portfolio.microcms.io/api/v1/blog?fields=title,date', { headers: { 'X-MICROCMS-API-KEY': import.meta.env.VITE_API_KEY }})
   .then(response => {
     cmsData.value = response.data.contents
   })
