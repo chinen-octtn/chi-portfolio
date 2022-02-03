@@ -8,6 +8,17 @@ import Heading from '../element/Heading.vue'
 import Text from '../element/Text.vue'
 import Button from '../element/Button.vue'
 import Separate from '../element/Separate.vue'
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Style Guide | Karachoco Code',
+  meta: [
+    {
+      name: 'description',
+      content: `Karachoco Codeのサイトで使っているスタイルガイドです。`,
+    },
+  ],
+})
 </script>
 
 <template>

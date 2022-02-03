@@ -1,19 +1,17 @@
-import { createApp } from 'vue'
-import { RouteRecordRaw, createRouter, createWebHistory } from 'vue-router'
+import { ViteSSG } from 'vite-ssg'
+import App from './App.vue'
 import Top from './components/pages/Top.vue'
 import Styleguide from './components/pages/Styleguide.vue'
+import { RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
   { path: '/', component: Top },
-  { path: '/styleguide', component: Styleguide },
+  { path: '/styleguide/', component: Styleguide },
 ]
 
-const router = createRouter({
-  history: createWebHistory(),
-  routes,
-})
-
-import App from './App.vue'
-const app = createApp(App)
-app.use(router)
-app.mount('#app')
+export const createApp = ViteSSG(
+  // the root component
+  App,
+  // vue-router options
+  { routes }
+)

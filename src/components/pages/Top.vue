@@ -12,6 +12,7 @@ import NewsList from '../element/NewsList.vue'
 import axios from 'axios'
 import { apiResponse, apiRequest } from '../../types/axios'
 import { ref } from 'vue'
+import { useHead } from '@vueuse/head'
 
 const apiKey = import.meta.env.VITE_API_KEY
 
@@ -28,6 +29,16 @@ axios.get('https://chi-portfolio.microcms.io/api/v1/blog?fields=title,date', api
   .catch(error => {
     console.log(error);
   });
+
+useHead({
+  title: 'Karachoco Code - からチョコ コード',
+  meta: [
+    {
+      name: `description`,
+      content: `フリーランスでWebフロントエンド、コンサルティングをしています。Web運用で困っていることを解決するためのパートナーとして一緒に考えていきます`,
+    },
+  ],
+})
 </script>
 
 <template>
