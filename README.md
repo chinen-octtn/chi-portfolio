@@ -32,6 +32,7 @@ https://vitejs.dev/
 ## ライブラリ
 
 - vue-router
+- sass
 
 ## eslint + autoformat
 
